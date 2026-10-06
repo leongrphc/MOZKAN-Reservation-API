@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T00:00:00.000Z",
+  "title": "Design System: MOZKAN",
+  "extensions": {
+    "colorMeta": {
+      "page-bg": {
+        "role": "neutral",
+        "displayName": "Pale Page",
+        "canonical": "#f3f5f8",
+        "tonalRamp": [
+          "#202a39",
+          "#36465b",
+          "#53657b",
+          "#68788b",
+          "#9aa7b6",
+          "#c2cbd5",
+          "#e0e5eb",
+          "#f3f5f8"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White Surface",
+        "canonical": "#fff",
+        "tonalRamp": ["#202020", "#3b3b3b", "#5e5e5e", "#858585", "#aaa", "#ccc", "#e6e6e6", "#fff"]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Deep Slate Text",
+        "canonical": "#243247",
+        "tonalRamp": [
+          "#18202d",
+          "#243247",
+          "#405269",
+          "#68788b",
+          "#9aa7b6",
+          "#c2cbd5",
+          "#e0e5eb",
+          "#f3f5f8"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Restrained Action Blue",
+        "canonical": "#315f9c",
+        "tonalRamp": [
+          "#102039",
+          "#19345d",
+          "#245084",
+          "#315f9c",
+          "#5f89bd",
+          "#8eadd2",
+          "#c0d2e8",
+          "#edf3fb"
+        ]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Action Blue Hover",
+        "canonical": "#284e82",
+        "tonalRamp": [
+          "#0f1d31",
+          "#172d4b",
+          "#203f68",
+          "#284e82",
+          "#557baa",
+          "#86a5c9",
+          "#b9cce3",
+          "#eaf1fa"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Cool Border",
+        "canonical": "#dce2ea",
+        "tonalRamp": [
+          "#2b333e",
+          "#46515f",
+          "#68788b",
+          "#909dab",
+          "#b8c2ce",
+          "#dce2ea",
+          "#edf0f4",
+          "#fff"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "Control Border",
+        "canonical": "#bbc7d5",
+        "tonalRamp": [
+          "#26303d",
+          "#3b495b",
+          "#5d6c7e",
+          "#8190a2",
+          "#a4b1c0",
+          "#bbc7d5",
+          "#e2e7ed",
+          "#fff"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus Blue",
+        "canonical": "#a7c4ed",
+        "tonalRamp": [
+          "#1c2d4b",
+          "#35517b",
+          "#5877a6",
+          "#7e9fd0",
+          "#a7c4ed",
+          "#c9daf5",
+          "#e2ecfb",
+          "#f5f8fe"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "body": { "displayName": "System UI", "purpose": "All interface copy and controls." },
+      "heading": {
+        "displayName": "System UI Heading",
+        "purpose": "Intro and primary view headings."
+      },
+      "label": { "displayName": "System UI Label", "purpose": "Compact form and control labels." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [{ "name": "mobile", "value": "720px" }]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main submit and action control.",
+      "html": "<button class=\"ds-btn-primary\">Giriş yap</button>",
+      "css": ".ds-btn-primary { font: inherit; font-weight: 650; border-radius: 5px; padding: 9px 13px; cursor: pointer; background: #315f9c; border: 1px solid #315f9c; color: #fff; } .ds-btn-primary:hover { background: #284e82; } .ds-btn-primary:focus-visible { outline: 3px solid #a7c4ed; outline-offset: 1px; } .ds-btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet alternative action control.",
+      "html": "<button class=\"ds-btn-secondary\">Çıkış yap</button>",
+      "css": ".ds-btn-secondary { font: inherit; font-weight: 650; border-radius: 5px; padding: 9px 13px; cursor: pointer; background: #fff; border: 1px solid #aebdce; color: #31527f; } .ds-btn-secondary:hover { background: #f1f5fa; } .ds-btn-secondary:focus-visible { outline: 3px solid #a7c4ed; outline-offset: 1px; } .ds-btn-secondary:disabled { opacity: 0.5; cursor: not-allowed; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Native text or select field used in cards and inline forms.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-field\">E-posta</label><input id=\"ds-field\" class=\"ds-field\" type=\"email\" />",
+      "css": ".ds-field-label { display: block; font: inherit; font-size: 0.88rem; font-weight: 650; color: #405269; margin: 4px 0; } .ds-field { font: inherit; border: 1px solid #bbc7d5; border-radius: 5px; padding: 9px 10px; background: #fff; color: #243247; min-width: 0; } .ds-field:focus-visible { outline: 3px solid #a7c4ed; outline-offset: 1px; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White bordered container for forms and workspace sections.",
+      "html": "<section class=\"ds-card\"><h2>Etkinlikler</h2><p>Güncel müsaitlik bilgisi gösterilir.</p></section>",
+      "css": ".ds-card { background: #fff; border: 1px solid #dce2ea; border-radius: 8px; padding: 20px; color: #243247; } .ds-card h2 { font-size: 1.15rem; margin: 0 0 16px; color: #253b60; }"
+    },
+    {
+      "name": "Navigation Header",
+      "kind": "nav",
+      "description": "Compact site header with brand and API documentation link.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\">MOZKAN</a><a class=\"ds-docs\" href=\"#\">API dokümanı</a></header>",
+      "css": ".ds-nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 20px; background: #fff; border-bottom: 1px solid #dce2ea; } .ds-brand { font-weight: 750; color: #263c63; text-decoration: none; letter-spacing: 0.03em; } .ds-docs { color: #31598f; } .ds-nav a:focus-visible { outline: 3px solid #a7c4ed; outline-offset: 1px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Practical Reservation Desk",
+    "overview": "MOZKAN is a compact, code-led operations screen. Its visual language keeps the reservation API easy to read: a pale neutral page, white bordered sections, dark text, and one restrained blue action color. The system uses familiar browser forms and tables so the interface stays functional and legible.\n\nThe layout gives authentication a short introductory panel, then moves the signed-in workspace through organization selection, available events, and personal reservations. Content stacks on small screens, while data tables retain their readable columns through horizontal scrolling.",
+    "keyCharacteristics": [
+      "Light neutral page background with white, lightly bordered cards.",
+      "System UI typography with modest heading scale and compact labels.",
+      "Blue primary actions, outlined secondary actions, and visible keyboard focus.",
+      "Native forms, simple tables, inline status messages, and no decorative imagery."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Use the restrained blue family for actions, links, and feedback while neutral surfaces carry most of the screen.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do keep the page light, white, and cool-neutral with blue reserved for action and feedback.",
+      "Do use system UI typography and the observed compact spacing rhythm.",
+      "Do preserve visible keyboard focus with the light blue `3px` outline.",
+      "Do keep tables horizontally scrollable on narrow screens instead of collapsing their columns.",
+      "Do make empty, loading, success, and error states understandable through text and status regions."
+    ],
+    "donts": [
+      "Don't add decorative imagery, gradients, or shadows to this functional screen.",
+      "Don't replace the native form controls with a visually heavy custom treatment.",
+      "Don't introduce extra accent colors that compete with the restrained blue action color.",
+      "Don't hide table content or force dense columns into an unreadable mobile layout."
+    ]
+  }
+}
